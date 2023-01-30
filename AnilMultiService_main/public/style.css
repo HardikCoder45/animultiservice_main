@@ -1,0 +1,609 @@
+ 
+ html{
+font-size: 10px;
+ }
+ 
+
+   
+.Heading{
+text-align: center;
+background-color:green;
+font-size: calc(1vw + 0.7rem);
+font-family: Courier New;
+color:white;
+margin:-0.5rem;
+box-shadow: .5rem .2rem .2rem black;
+text-shadow: rgb(3, 65, 13) .1rem 0 .8rem;
+size:relative;
+
+}
+.follow{
+    text-align: left;
+  margin-top: -3rem;
+
+}
+.follow:hover{
+   opacity:0.5;
+   
+}
+.b{
+font-size:1.5rem;
+font-family: 'Courier New';
+text-align: center;
+color: white;
+ margin-top: -3rem;
+ flex-direction: row;
+ align-self: center;
+ font-weight: bold;
+ text-shadow: rgb(3, 65, 13) 1rem 0 .8rem;
+}
+.c{
+    text-align: right;
+     color:white;
+     font-family: 'Courier New';
+     font-size: 1.5rem;
+     margin-top: -3.5rem;
+     font-weight: bold;
+     text-shadow: rgb(3, 65, 13) 1rem 0 .8rem;
+}
+
+.m{
+    text-align: center;
+    margin-top:2.0rem;
+    color:black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+.intro{
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-family:serif;
+     font-size: 1.5rem;
+}
+.work{
+flex-direction: row;
+display: flex;
+}
+.Celing{
+background-color:#D3D3D3;
+border-radius: 3rem;
+margin-top: 2rem;
+align-self: center;
+text-align: center;
+width: 32rem;
+height: 37rem;
+flex-direction:row;
+}
+
+.image1{
+margin-bottom: 2rem;
+}
+.g{
+margin-top: -1.2rem;
+font-size: 1.5rem;
+font-weight: bold;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.k{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+.flatu{
+    color:#D3D3D3;
+}
+.button2{
+margin-top: 1.0rem;
+}
+.work{
+ 
+    flex-wrap: wrap;
+    flex: 1;
+    display: flex;
+}
+.Modular_kitchen{
+    background-color:#D3D3D3;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+    width: 32rem;
+    height: 37rem;
+     margin-left: 2rem;
+    
+}
+.home{
+    background-color:#D3D3D3;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+    width: 32rem;
+    height: 37rem;
+     margin-left: 2rem;
+}
+.side{
+margin-top: 30rem;
+align-self: right;
+position: relative;
+margin-left: -8rem;
+}
+.imgs{
+    display: flex;
+    flex-direction: row;
+    align-self: right;
+    border-color: green;
+    margin-top: 2rem;
+    align-items: center;
+    border-width: 1rem;
+    position: relative;
+    margin-left: 4rem;
+}
+ 
+.Wardrobe{
+    background-color:#D3D3D3;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+    width: 32rem;
+    height: 37rem;
+}
+.details{
+background-color: rgb(56, 56, 134);
+}
+.pop_celing{
+    background-color:#D3D3D3;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+    width: 32rem;
+    height: 37rem;
+    margin-left: 2rem;
+}
+ 
+ 
+
+.name{
+margin-top: 1rem;
+font-size: 1.5rem;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background-color: #ece9e9;
+background-size: 100%;
+}
+
+ 
+ 
+.body1{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/004/515/055/small/watercolor-texture-background-free-vector.jpg);
+}
+.button1{
+    display: flex;
+    flex-direction: row;
+    margin-top: -11rem;
+}
+.bt{
+align-self: right;
+margin-top: 5rem;
+position: absolute;
+margin-top: 20rem;
+margin-left: 1rem;
+ 
+}
+ 
+.slide{
+    width: 100%;
+    height: 100%;
+position:absolute;
+display: flex;
+flex-direction: row;
+transition: 1s;
+}
+main{
+width:100%;
+height:45rem;
+position: relative;
+overflow: hidden;
+}
+
+.Button{
+    position:relative;
+    align-self: center;
+    margin-top: 1rem;
+    box-shadow: 1rem 1rem 1rem black;
+    display: flex;
+    flex-direction: row;
+}
+.imgs{
+    
+    width:20rem;
+    height:20rem
+}
+.details{
+background-color: rgb(46, 46, 141);
+}
+
+.Buliding{
+    background-color:#D3D3D3;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+    width: 32rem;
+    height: 37rem;
+}
+.bathroom{
+    background-color:#D3D3D3;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+    width: 32rem;
+    height: 37rem;
+    margin-left: 2rem;
+}
+.office{
+    background-color:#D3D3D3;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+    width: 32rem;
+    height: 37rem;
+    margin-left: 2rem;
+}
+.WaterProof{
+    background-color:#D3D3D3;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+    width: 32rem;
+    height: 37rem;
+    margin-left: 2rem;
+}
+.other{
+    background-color:#D3D3D3;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+    width: 32rem;
+    height: 37rem;
+    margin-left: 34rem;
+}
+.z{
+    font-size: 5rem;
+font-weight: bold;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.video{
+display: flex;
+flex-direction: row;
+margin-top: 3rem;
+background-color: #D3D3D3;
+border-radius: 2rem;
+margin-left: 2rem;
+ 
+}
+.vid{
+margin-top: 2rem;
+text-align: center;
+font-size: 2rem;
+font-weight: bold;
+color:black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+ 
+}
+.l{
+display: flex;
+flex-direction: row;
+}
+.video2{
+ 
+    margin-top: 3rem;
+    background-color: #D3D3D3;
+    border-radius: 2rem;
+    margin-left: 2rem;
+}
+.video3{
+    margin-top: 3rem;
+    background-color: #D3D3D3;
+    border-radius: 2rem;
+    margin-left: 2rem;
+}
+.video4{
+    margin-top: 3rem;
+    background-color: #D3D3D3;
+    border-radius: 2rem;
+    margin-left: 2rem;
+}
+.text{
+background-color:#243242;
+border-width: .3rem;
+width: 100%;
+ 
+
+}
+.y{
+    margin-left: 2rem;
+color:white;
+font-size: 1.5rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.kl{
+    color:white;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;;
+}
+.ms{
+margin-left: 2rem;
+color:white;
+font-weight: bold;
+font-size: 1.5rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.jk{
+    color:white;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.jik{
+flex-direction: row;
+display: flex;
+text-align: center;
+color:black;
+font-weight: bold;
+font-family:serif;
+text-align: center;
+align-self: center;
+font-size: 1.5rem;
+}
+.nav{
+display: flex;
+flex-direction: row;
+align-self: center;
+text-align: center;
+margin-left:10px;
+border-radius: 0;
+align-items: center;
+margin-top: 2rem;
+margin-left: 45rem;
+
+}
+.bt7{
+text-align: center;
+font-size: 1.7rem;
+font-weight: bold;
+margin-left:10px;
+}
+.yu{
+margin-left: 6rem;
+}
+.rating2{
+font-size: 1.5rem;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.rating{
+    background-color: #ece9e9;
+}
+.input_90{
+    background-color: #ece9e9;
+ 
+border-width: 2px;
+border-bottom-width: 2px;
+border-bottom-color: black;
+width:40%;
+border-radius: 5px;
+
+}
+.star{
+ 
+font-size: 2rem;
+transition: 0.3s;
+cursor:pointer;
+list-style: none;
+margin-left: .2rem;
+}
+ 
+.stars{
+    margin-top: 5px;
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    align-self: left;
+    margin-left: -3.5rem;
+    
+}
+
+ 
+.bto{
+background-color:#243242;
+color:white;
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+border-radius:2rem;
+align-self: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1.5rem;
+border-width: 0;
+}
+.man{
+border-radius: 6rem;
+border-width: 2px;
+border-color: black;
+position: absolute;
+}
+.ratings{
+background-color: #ece9e9;
+border-width: 0;
+width:20%;
+align-self: left;
+font-family:'Arial, Helvetica, sans-serif';
+font-size: 15px;
+font-weight: bold;
+border-color: black;
+border-width: 1.5px;
+border-radius: 10px;
+ 
+}
+.name5{
+font-size: 15px;
+font-weight: bold;
+margin-left: 45px;
+}
+.man1{
+display: flex;
+flex-direction: row;
+}
+.st{
+    margin-bottom: 15px;
+font-size: 25px;
+
+}
+.orange{
+    color:orange;
+}
+.profile{
+display: flex;
+flex-direction: row;
+background-color: green;
+height: 70px;
+ 
+padding: 0;
+color:white;
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+ 
+.text900{
+font-size: 3rem;
+font-weight: bolder;
+position: absolute;
+margin-left:30px;
+margin-top: -3rem;
+text-shadow: rgb(3, 65, 13) .1rem 0 .8rem;
+
+}
+.arrow3{
+font-size:30px;
+width:90%;
+margin-top:2rem;
+}
+@media(max-width:998px){
+    html{
+font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    html{
+font-size: 45%;
+    }
+
+}
+@media only screen and (max-width:390px){
+    .imgs{
+    width:400px;
+    height: auto;
+     overflow: hidden;
+     margin-left: -10px;
+    }
+    .follow{
+    width:50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -2rem;
+     
+    }
+    .b{
+        margin-top: -2rem;
+    }
+    .c{
+        margin-top: -3rem;
+    }
+    .im{
+    overflow: hidden;
+    width:17rem;
+    height:23rem
+    }
+    .celing{
+    width:23rem;
+    height:35rem;
+
+    }
+    .button2 img{
+    width:18rem;
+    margin-top: -1.2rem;
+    }
+    .Modular_Kitchen{
+        width:23rem;
+        height:35rem;
+    }
+    .bathroom{
+        width:23rem;
+        height:35rem;
+    }
+    .Buliding{
+        width:23rem;
+        height:35rem;
+      
+    }
+    .WaterProof{
+        width:23rem;
+    height:35rem;
+
+    }
+    .Wardrobe{
+        width:23rem;
+        height:35rem;
+        
+    }
+    .office{
+        width:23rem;
+        height:35rem;
+    }
+    .home{
+        width:23rem;
+        height:35rem;
+    }
+    .other{
+        background-color:#D3D3D3;
+        border-radius: 3rem;
+        margin-top: 2rem;
+        width:23rem;
+        height:35rem;
+        margin-left: 2rem;
+    }
+    .l{
+    display: flex;
+    flex-direction: column;
+    }
+     .tyo{
+     flex-direction: row;
+     display: flex;
+     }
+     .klt23{
+        flex-direction: row;
+        display: flex;
+        }
+        form{
+        width:60%
+        }
+        .nav{
+        margin-left: 20rem;
+        }
+     
+
+}

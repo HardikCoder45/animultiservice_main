@@ -1,0 +1,37 @@
+[debug] [2023-01-29T14:07:11.641Z] ----------------------------------------------------------------------
+[debug] [2023-01-29T14:07:11.645Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\inno\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-29T14:07:11.646Z] CLI Version:   11.21.0
+[debug] [2023-01-29T14:07:11.646Z] Platform:      win32
+[debug] [2023-01-29T14:07:11.646Z] Node Version:  v18.12.1
+[debug] [2023-01-29T14:07:11.657Z] Time:          Sun Jan 29 2023 19:37:11 GMT+0530 (India Standard Time)
+[debug] [2023-01-29T14:07:11.657Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-29T14:07:11.786Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-29T14:07:11.786Z] > authorizing via signed-in user (preetiarora8744@gmail.com)
+[debug] [2023-01-29T14:07:11.787Z] [iam] checking project anilmultiservice-afefa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-29T14:07:11.790Z] > refreshing access token with scopes: []
+[debug] [2023-01-29T14:07:11.793Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-29T14:07:11.793Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-29T14:07:12.571Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-01-29T14:07:12.573Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-29T14:07:12.576Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/anilmultiservice-afefa:testIamPermissions [none]
+[debug] [2023-01-29T14:07:12.576Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/anilmultiservice-afefa:testIamPermissions x-goog-quota-user=projects/anilmultiservice-afefa
+[debug] [2023-01-29T14:07:12.576Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anilmultiservice-afefa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-29T14:07:14.070Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/anilmultiservice-afefa:testIamPermissions 401
+[debug] [2023-01-29T14:07:14.070Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anilmultiservice-afefa:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2023-01-29T14:07:14.072Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-01-29T14:07:14.072Z] > refreshing access token with scopes: []
+[debug] [2023-01-29T14:07:14.074Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-29T14:07:14.074Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-29T14:07:14.272Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-01-29T14:07:14.273Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-29T14:07:14.274Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/anilmultiservice-afefa [none]
+[debug] [2023-01-29T14:07:14.754Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/anilmultiservice-afefa 401
+[debug] [2023-01-29T14:07:14.754Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/anilmultiservice-afefa {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-01-29T14:07:14.755Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-01-29T14:07:14.958Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\inno\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\inno\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project anilmultiservice-afefa. Please make sure the project exists and your account has permission to access it.

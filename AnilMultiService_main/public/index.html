@@ -1,0 +1,667 @@
+<html font-size="10px">
+<head>
+    <title>AnilMultiService</title>
+    <link rel="stylesheet" href="style.css">
+ 
+    <script src="./Libraires/p5.min.js"></script>
+    <script src="./Libraires/p5.dom.min.js"></script>
+    <script src="./Libraires/p5.play.js"></script>
+    <script src="./Libraires/p5.sound.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css">
+ 
+
+    <meta charset="UTF-8">
+  <meta name="viewport" content=" width=device- width, initial-scale=1.0">
+
+  <script
+src="https://code.jquery.com/jquery-3.5.1.min.js"
+integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+crossorigin="anonymous"
+></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+      <script>
+          const firebaseConfig = {
+apiKey: "AIzaSyAFfF_aAVyTB_Xdp86HihR1pCG3RURPWCI",
+authDomain: "anilmultiservice-afefa.firebaseapp.com",
+databaseURL: "https://anilmultiservice-afefa-default-rtdb.firebaseio.com",
+projectId: "anilmultiservice-afefa",
+storageBucket: "anilmultiservice-afefa.appspot.com",
+messagingSenderId: "871449352407",
+appId: "1:871449352407:web:4f96cf3868274a4cf17892"
+};
+    // Initialize Firebase
+   if (!firebase.apps.length) {
+firebase.initializeApp(firebaseConfig);
+}else {
+firebase.app(); // if already initialized, use that one
+}
+          </script>
+     
+</head>
+<body>
+  
+ <div class="Heading">
+    <h1 style="font-weight:bold;">AnilMultiService</h1>
+    <div class="b">
+      <div class="e">
+        Good Interior Good Life
+      </div>
+       </div>
+    <div class="follow">
+       
+  <a href="https://www.instagram.com/anilmultiservice/?hl=en">
+<Image src="./libraries/image-removebg-preview.png"  width="30rem" height="30rem"></Image>
+</a>  
+ 
+  <a href="https://hi-in.facebook.com/100076496392043/photos/">
+<Image src="./libraries/image-removebg-preview (1).png"  width="30rem" height="30rem"></Image>
+</a>  
+  <a href="http://127.0.0.1:5500/twitter.html">
+ <Image src="./libraries/image-removebg-preview (2).png"  width="30rem" height="30rem"></Image>
+</a>  
+</div>
+<div class="c" >
+<div>Contact Us On -</div>
+9250005522,9250004422
+</div>
+</div>
+
+<div class="Button">   
+ <main>
+        <Image id="image"    src='./libraries/interior_3.jpg'  width="104rem" height="45rem" alt="" class="slide">
+          <Image id="Image4" src="./libraries/interior_4.jpg"  width="104rem" height="45rem" class="slide"></Image>
+         <Image id="Image5"  src="./libraries/interior_5.jpg"   width="104rem" height="45rem" class="slide"></Image>
+         <Image id="Image6"  src="./libraries/interior_6.jpg"   width="104rem" height="45rem" class="slide"></Image>
+         <Image id="Image4"  src="./libraries/interior_4.jpg"   width="104rem" height="45rem" class="slide"></Image>
+        <Image id="Image5"   src="./libraries/interior_5.jpg"    width="104rem" height="45rem"  class="slide"></Image>
+        <Image id="Image6"   src="./libraries/interior_6.jpg"    width="104rem" height="45rem"  class="slide"></Image>
+        <Image id="Image7"   src="./libraries/interior_7.jpg"    width="104rem" height="45rem"   class="slide"></Image>
+         <Image id="Image8"  src="./libraries/kitchen.jpg"      width="104rem" height="45rem"   class="slide"></Image>
+         
+        </main>
+  
+         
+         
+       <script>
+        
+
+        const slides =  document.querySelectorAll(".slide")
+        var counter = 0;
+
+       
+        slides.forEach(
+        (slide,index)=>{
+ 
+          slide.style.left =`${index * 100}%` 
+        }
+        )
+        const goPrev = ()=>{
+          counter--
+          slideImage()
+        }
+        const goNext = ()=>{
+          counter++
+          slideImage()
+         
+        }
+     const slideImage = ()=>{
+         slides.forEach(
+          (slide)=>{
+            if(slide.style.transform == `translateX(-${800}%)`){
+              
+              counter=0
+          } 
+            slide.style.transform = `translateX(-${counter*100}%)`
+          
+          }
+         )
+        }
+
+      
+       function a(){
+        counter++
+          slideImage()
+       }
+       setInterval (a,2500)
+        </script>
+
+</div>
+ 
+  </div>
+
+
+<div class="imgs">
+<Image id="Image1" src="./libraries/interior_1.jpg"    width="120rem" height="80rem"></Image>
+<Image id="Image2" src="./libraries/interior_2.jpg"  width="120rem" height="80rem"></Image>
+<Image id="Image3" src="./libraries/interior_3.jpg"    width="120rem" height="80rem"></Image>
+<Image id="Image4" src="./libraries/interior_4.jpg"    width="120rem" height="80rem"></Image>
+<Image id="Image5" src="./libraries/interior_5.jpg"   width="120rem" height="80rem"></Image>
+<Image id="Image6" src="./libraries/interior_6.jpg"    width="120rem" height="80rem"></Image>
+<Image id="Image7" src="./libraries/interior_7.jpg"    width="120rem" height="80rem"></Image>
+<Image id="Image8" src="./libraries/kitchen.jpg"    width="120" height="auto"></Image>
+</div>
+
+ 
+
+<div class="f">
+<div class="m">Introduction</div>
+<div class="intro">
+Hi! It's AnilMultiService here You get all house interior services ex- painting,false celling,modular kitchen,Wooden almirha etc.
+
+</div>
+<div class="jik">
+  GSTN - 07BWGPA2702L1ZT
+
+  </div>
+
+
+</div>
+<div class="nav">
+  <div>
+   <button onclick="window.location.href = 'index.html'"><i style="font-size:30px;" class="fa">&#xf015</i></button>
+   <p class="bt7">Home</p>
+   </div>
+   <div calss="yu">
+   <button onclick="window.location.href = 'Profile.html'"><i style="font-size:30px;" class="fa fa-user"></i></button>
+  <p class="bt7">Profile</p>
+   </div>
+     </div>
+
+
+<div class="work">
+  <div class="celing">
+    <div class="flatu">
+      ...........
+      </div>
+<div class="image1">
+ 
+    <Image id="image1" src="./libraries/gypsum.jpg"  width="250rem" height="250rem" class="im"></Image>
+   </div>
+ <div class="g" id="t">
+  Gypsum False Ceiling 
+</div>
+ <div class="K">
+Rate- ₹75/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="gypsum()"></Image> </a>
+  <script>
+    function gypsum(){
+      localStorage.setItem('val4', "Gypsum False Ceiling" )
+      window.location.href = "Form.html"
+    }
+      </script>
+  </div>
+
+</div>
+
+
+<div class="Modular_Kitchen">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/ModularKitchen.png"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+Wooden Modular Kitchen
+</div>
+<div class="K">
+Rate- ₹1100/sq-ft
+</div>
+<div class="button2">
+<a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="kitchen()"></Image></a>
+<script>
+  function kitchen(){
+    localStorage.setItem('val4', "Wooden Modular Kitchen" )
+    window.location.href = "Form.html"
+  }
+    </script>
+</div>
+</div>
+
+<div class="home">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/renovation.jpeg"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+Home Renovation/Interior
+</div>
+<div class="K">
+Rate- ₹2000/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="house()"></Image></a>
+  <script>
+    function house(){
+      localStorage.setItem('val4', "Home Renovation/Interior" )
+      window.location.href = "Form.html"
+    }
+      </script>
+
+
+</div>
+</div>
+<div class="Wardrobe">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/wardrobe.jpg"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+Wardrobe
+</div>
+<div class="K">
+Rate- 1100rs/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="wardrobe()"></Image></a>
+  <script>
+    function wardrobe(){
+      localStorage.setItem('val4', "Wardrobe" )
+      window.location.href = "Form.html"
+    }
+      </script>
+
+</div>
+</div>
+<div class="bathroom">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/bathroom1.png"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+Washroom Renovation
+</div>
+<div class="K">
+Rate- 120000rs/unit
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="Bathroom()"></Image></a>
+  <script>
+    function bathroom(){
+      localStorage.setItem('val4', "Washroom Renovation" )
+      window.location.href = "Form.html"
+    }
+      </script>
+</div>
+</div>
+<div class="office">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/office.png"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+Office Interior
+</div>
+<div class="K">
+Rate- 2000rs/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="office()"></Image></a>
+  <script>
+    function office(){
+      localStorage.setItem('val4', "Office Interior" )
+      window.location.href = "Form.html"
+    }
+      </script>
+</div>
+</div>
+
+
+<div class="Buliding">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/building painting.jpg"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+Building painting
+</div>
+<div class="K">
+Rate- 22rs/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="painting()"></Image></a>
+  <script>
+    function painting(){
+      localStorage.setItem('val4', "Building painting" )
+      window.location.href = "Form.html"
+    }
+      </script>
+</div> 
+</div>
+
+<div class="WaterProof">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/WaterProof.jpg"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+WaterProof Modular Kitchen
+</div>
+<div class="K">
+Rate- 1300rs/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="WaterProof()"></Image></a>
+  <script>
+    function WaterProof(){
+      localStorage.setItem('val4', "WaterProof Modular Kitchen" )
+      window.location.href = "Form.html"
+    }
+      </script>
+</div> 
+</div>
+
+<div class="WaterProof">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/hdhmr kitchen.jpg"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+HDHMR Modular Kitchen
+</div>
+<div class="K">
+Rate- 1200rs/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="HDHMR()"></Image></a>
+  <script>
+    function HDHMR(){
+      localStorage.setItem('val4', "HDHMR Modular Kitchen" )
+      window.location.href = "Form.html"
+    }
+      </script>
+</div> 
+</div>
+
+<div class="Buliding">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/pvc kitchen.jpg"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+PVC Modular Kitchen
+</div>
+<div class="K">
+Rate- 1400rs/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="PVC()"></Image></a>
+  <script>
+    function PVC(){
+      localStorage.setItem('val4', "PVC Modular Kitchen" )
+      window.location.href = "Form.html"
+    }
+      </script>
+</div> 
+</div>
+
+<div class="WaterProof">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/laminate.png"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+PVC Laminated Modular Kitchen
+</div>
+<div class="K">
+Rate- 1300rs/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="PVC_Laminated()"></Image></a>
+  <script>
+    function PVC_Laminated(){
+      localStorage.setItem('val4', "PVC Laminated Modular Kitchen" )
+      window.location.href = "Form.html"
+    }
+      </script>
+</div> 
+</div>
+
+<div class="WaterProof">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/grid.jpg"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+Office Grid Ceiling 
+</div>
+<div class="K">
+Rate- 70rs/sq-ft
+</div>
+<div class="button2">
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="Grid()"></Image></a>
+  <script>
+    function Grid(){
+      localStorage.setItem('val4', "Office Grid Ceiling " )
+      window.location.href = "Form.html"
+    }
+      </script>
+</div> 
+</div>
+
+<div class="Other">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/eniginer.png"  width="250rem" height="250rem" class="im"></Image>
+ </div>
+<div class="g">
+Other Work  
+</div>
+ 
+<div class="button2">
+<a href="Form.html"><Image src="./libraries/add to cart.png"  width="150rem" height="40rem"></Image></a>
+</div> 
+</div>
+
+
+</div>
+<b><hr  width="100%" height="20rem" ></b>
+
+<div class="vid">
+  Some Videos
+  </div>
+  <div class="l">
+ 
+<video  width="250rem" height="300rem" class="video" controls>
+<source src="./libraries/video1.mp4">
+  </video>
+
+  <video  width="250rem" height="300rem" class="video2" controls>
+    <source src="./libraries/video2.mp4">
+      </video>
+      
+ 
+      <video  width="250rem" height="300rem" class="video3" controls>
+        <source src="./libraries/video3.mp4">
+          </video>
+
+          <video  width="250rem" height="300rem" class="video4" controls>
+            <source src="./libraries/video5.mp4">
+              </video>
+              
+  </div>
+          
+ 
+
+<div class="text">
+   
+  <p class="kl">   Planning to give your residential and commercial spaces a makeover? Looking for A-listed companies for executing the same? Well, then you have landed at the right place. We, Anil Multi Service are one of the leading service providers in the market rendering promptly executed Home Painting Contractor Services, Office Partitions Services, Modern Renovation Services, and more.</p>
+
+  <p class="y">   Ranging from the washroom to the drawing room and office interiors, we provide services for every area of your home and office. Our services are carried out by our team of dexterous professionals. They are well-versed in their job and hold the requisite skills to perform their operations with ease and efficiency. Because of their ever-lasting support, over the years, we have never disappointed our customers and have always retained their trust in us. Our customers highly appreciate us for the high-quality products that we use to execute the services and for our ability to stay true to our commitments.</p> 
+  
+  <p class="ms">  Our Market Reputation</p>
+  
+ <p class="y">    Our large clientele comprising loyal customers is proof of our notable reputation in the market. Our customers show immense trust in us and support our business unit by promoting us to their linked connections. Therefore, they play a large role in maintaining our market reputation. </p>
+  
+  <p class="ms">   Reasons to Choose Us</p>
+  
+  <p class="y">   We know this question pops up in the minds of our potential customers why we are the best and the most preferred choice in the market to avail Office Partition Services, Modern Renovation Services, Home Painting Contractor Services, and more. Hence, the below-mentioned points justify our credibility in the market and give some solid reasons to you all, our potential customers to connect with us:</p>
+  <ul class="jk">
+  <li>    Budget-friendly Prices: We offer reliable services at competitive prices as we understand not everyone can afford high-priced services but every individual dream of living or working in a luxuriously-designed environment. 
+    <li>  Skilled Professionals: For carrying out different services, we have a team of specific competent professionals on the board. Only the professionals that hold expertise in the required field will be able to pull off a smooth execution of the same. 
+      <li>   Fulfilling Commitments: Commitment is not just a word for us but a responsibility that needs to be fulfilled as soon as possible. Therefore, we prioritize the orders of our customers and fulfill their requirements and demands on time. 
+        <li>  
+          Quality-Assured Products: We use the best quality products to perform our services. The products we use are procured from renowned vendors in the market. 
+  </ul>
+</div>
+
+ <div class="man1">
+<img src="./libraries/man1.png" class="man" width="40px" height="35px">
+<p class="name5">Hardik Arora</p>
+</div>
+<input class="ratings" value="Very Good Work"  readonly></input>
+ 
+<div class="st">
+  <span class="orange">&#9733</span> 
+  <span class="orange">&#9733</span>
+  <span class="orange">&#9733</span>
+  <span class="orange">&#9733</span>
+  <span class="orange">&#9733</span>
+   </div>
+   
+<div class="man1">
+  <img src="./libraries/man1.png" class="man" width="40px" height="35px">
+  <p class="name5">Amit Kumar</p>
+  </div>
+  <input class="ratings" value="I Like it nice Work"  readonly></input>
+     
+  <div class="st">
+    <span class="orange">&#9733</span> 
+    <span class="orange">&#9733</span>
+    <span class="orange">&#9733</span>
+    <span class="">&#9733</span>
+    <span class="">&#9733</span>
+     </div>
+
+  <div class="man1">
+    <img src="./libraries/man1.png" class="man" width="40px" height="35px">
+    <p class="name5">Preeti Nagpal</p>
+    </div>
+    <input class="ratings" value="Work completed in just 15days"  readonly></input>
+    <div class="st">
+      <span class="orange">&#9733</span> 
+      <span class="orange">&#9733</span>
+      <span class="orange">&#9733</span>
+      <span class="orange">&#9733</span>
+      <span class="">&#9733</span>
+       </div>
+       
+    <div class="man1">
+      <img src="./libraries/man1.png" class="man" width="40px" height="35px">
+      <p class="name5">Yogita Nagpal</p>
+      </div>
+      <input class="ratings" value="I Face 0 problems in work"  readonly></input>
+      <div class="st">
+        <span class="orange">&#9733</span> 
+        <span class="orange">&#9733</span>
+        <span class="orange">&#9733</span>
+        <span class="">&#9733</span>
+        <span class="">&#9733</span>
+         </div>
+
+         <div class="man1">
+          <img src="./libraries/man1.png" class="man" width="40px" height="35px">
+          <p class="name5">Anshul Yadav</p>
+          </div>
+          <input class="ratings" value="Good work but face small issues"  readonly></input>
+          <div class="st">
+            <span class="orange">&#9733</span> 
+            <span class="orange">&#9733</span>
+            <span class="">&#9733</span>
+            <span class="">&#9733</span>
+            <span class="">&#9733</span>
+             </div>
+         
+
+<div class="rating">
+  <p class="rating2">Comment Us :-</p>
+  <input placeholder="" value="" Class="input_90" id="input_90"/>
+
+ 
+    <ul class="stars">
+    
+  <li class="star"><i class="fa fa-star"></i></li> 
+<li class="star"><i class="fa fa-star"> </i></li>
+<li class="star"><i class="fa fa-star"></i></li>
+<li class="star"><i class="fa fa-star"></i></li>
+<li class="star"><i class="fa fa-star"></i></li>
+ </ul>
+ 
+  </div>
+ <script> 
+ const stars = document.querySelectorAll('.star')
+
+ for(x=0; x>stars.length; x++){
+  stars[x].addEventListener(e,function(e){
+  click = e.click 
+  console.log("click")
+  })
+ }
+  </script>
+ <button onclick="comment()" type="button" id="bto" class="bto">
+  SUBMIT
+  </button>
+
+
+<script>
+ 
+function comment(){
+  db = firebase.database()
+  const bt90 = document.getElementById("input_90").value 
+  var no = Math.floor((Math.random() * 100) + 1);
+  const d =  new Date();
+  localStorage.setItem("date",d)
+ var date1 =  localStorage.getItem('date')
+  console.log(d)
+  db.ref('/Comments/' + no).set({
+  comment:bt90,
+  date:date1
+  })
+  document.getElementById("bto").innerHTML = "SUBMITTED";
+}
+
+</script>
+<div class="ending">
+
+</div>
+</body>
+</html> 
