@@ -1,6 +1,7 @@
 <html font-size="10px">
 <head>
     <title>AnilMultiService</title>
+    <link rel="icon" type="./libraries/ams2.ico" href="./libraries/AMS.JPG">
     <link rel="stylesheet" href="style.css">
  
     <script src="./Libraires/p5.min.js"></script>
@@ -47,7 +48,7 @@ firebase.app(); // if already initialized, use that one
     <h1 style="font-weight:bold;">AnilMultiService</h1>
     <div class="b">
       <div class="e">
-        Good Interior Good Life
+        Our Service Your Satisfaction
       </div>
        </div>
     <div class="follow">
@@ -152,10 +153,7 @@ firebase.app(); // if already initialized, use that one
 Hi! It's AnilMultiService here You get all house interior services ex- painting,false celling,modular kitchen,Wooden almirha etc.
 
 </div>
-<div class="jik">
-  GSTN - 07BWGPA2702L1ZT
 
-  </div>
 
 
 </div>
@@ -163,15 +161,23 @@ Hi! It's AnilMultiService here You get all house interior services ex- painting,
   <div>
    <button onclick="window.location.href = 'index.html'"><i style="font-size:30px;" class="fa">&#xf015</i></button>
    <p class="bt7">Home</p>
-   </div>
+   </div> 
    <div calss="yu">
    <button onclick="window.location.href = 'Profile.html'"><i style="font-size:30px;" class="fa fa-user"></i></button>
   <p class="bt7">Profile</p>
    </div>
+
+   <div calss="yu">
+    <button onclick="window.location.href = 'All_products.html'"><i style="font-size:30px;" class="fas fa-clipboard-list"></i></button>
+   <p class="bt7">Products</p>
+    </div>
+
      </div>
 
+<h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Latest Products</h1>
 
 <div class="work">
+  
   <div class="celing">
     <div class="flatu">
       ...........
@@ -414,8 +420,8 @@ PVC Modular Kitchen
 <div class="K">
 Rate- 1400rs/sq-ft
 </div>
-<div class="button2">
-  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="PVC()"></Image></a>
+<div class="button2">/
+  <a><Image src="./libraries/add to cart.png"  width="150rem" height="40rem" onclick="PVC()"><Image></a>
   <script>
     function PVC(){
       localStorage.setItem('val4', "PVC Modular Kitchen" )
@@ -476,20 +482,7 @@ Rate- 70rs/sq-ft
 </div>
 
 <div class="Other">
-  <div class="flatu">
-    ...........
-    </div>
-<div class="image1">
-
-  <Image id="image1" src="./libraries/eniginer.png"  width="250rem" height="250rem" class="im"></Image>
- </div>
-<div class="g">
-Other Work  
-</div>
- 
-<div class="button2">
-<a href="Form.html"><Image src="./libraries/add to cart.png"  width="150rem" height="40rem"></Image></a>
-</div> 
+ <a href="All_products.html">See All Products</a>
 </div>
 
 
@@ -500,24 +493,24 @@ Other Work
   Some Videos
   </div>
   <div class="l">
- 
-<video  width="250rem" height="300rem" class="video" controls>
+ <div class="l1">
+<video  width="218rem" height="300rem" class="video" controls>
 <source src="./libraries/video1.mp4">
   </video>
 
-  <video  width="250rem" height="300rem" class="video2" controls>
+  <video  width="218rem" height="300rem" class="video2" controls>
     <source src="./libraries/video2.mp4">
       </video>
-      
- 
-      <video  width="250rem" height="300rem" class="video3" controls>
+</div>      
+ <div class="l2">
+      <video  width="218rem" height="300rem" class="video3" controls>
         <source src="./libraries/video3.mp4">
           </video>
 
-          <video  width="250rem" height="300rem" class="video4" controls>
+          <video  width="218rem" height="300rem" class="video4" controls>
             <source src="./libraries/video5.mp4">
               </video>
-              
+               </div>    
   </div>
           
  
@@ -643,25 +636,25 @@ Other Work
 
 
 <script>
- 
-function comment(){
-  db = firebase.database()
-  const bt90 = document.getElementById("input_90").value 
-  var no = Math.floor((Math.random() * 100) + 1);
-  const d =  new Date();
-  localStorage.setItem("date",d)
- var date1 =  localStorage.getItem('date')
-  console.log(d)
-  db.ref('/Comments/' + no).set({
+const bt = document.getElementById("bto")
+db = firebase.database()
+let b = 1
+
+
+bt.addEventListener("click",()=>{
+b++;
+console.log(b)
+const d =  new Date();
+const bt90 = document.getElementById("input_90").value 
+localStorage.setItem("date",d)
+var date1 =  localStorage.getItem('date')
+document.getElementById("bto").innerHTML = "SUBMITTED";
+db.ref('/Comments/' + b).set({
   comment:bt90,
   date:date1
   })
-  document.getElementById("bto").innerHTML = "SUBMITTED";
-}
-
+})
 </script>
-<div class="ending">
-
-</div>
+ 
 </body>
 </html> 
