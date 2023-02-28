@@ -3,6 +3,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="./libraries/ams2.ico" href="./libraries/AMS.JPG">
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" width=device- width, initial-scale=1.0">
     <title>Products</title>
 </head>
     <body>
@@ -14,20 +16,141 @@
         <div class="search2">
 <span class="fa fa-search" style="font-size: 15px; left: 85%;"></span>
 </div>
-<input type="text" value="" placeholder="search..." class="search">
-
+<input type="text" value="" placeholder="search..." class="search" onkeyup="search()" id="search">
+ 
+<script src="search.js"></script>
 </div>
-    <div class="All_products">
+    <div class="All_products" id="All_products">
         
         <div class="product1">
              <h1 class="h190">1.</h1>
               <img src="libraries/bathroom1.png" class="img-1" width="200px" height="90px">
-              <h1 class="h191">Bathroom Renovation</h1>
-              <h1 class="h192">rs120000/unit</h1>
+              <h2 class="h191">Bathroom Renovation</h2>
+              <h1 class="h192">₹120000/unit</h1>
               <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
         </div>
+
+        <div class="product1">
+             <h1 class="h190">2.</h1>
+              <img src="./libraries/building painting.jpg" class="img-1" width="200px" height="90px">
+              <h2 class="h194">Building Painting</h2>
+              <h1 class="h195">₹22/sq-ft</h1>
+              <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+        </div>
+
+        <div class="product1">
+            <h1 class="h190">3.</h1>
+             <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+             <h2 class="h191">Gypsum False Ceiling</h2>
+             <h1 class="h196">₹75/sq-ft</h1>
+             <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+       </div>
+
+       <div class="product1">
+        <h1 class="h190">4.</h1>
+         <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+         <h2 class="h191">Gypsum False Ceiling</h2>
+         <h1 class="h196">₹75/sq-ft</h1>
+         <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+   </div>
+   
+   <div class="product1">
+    <h1 class="h190">5.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">The flooring services</h2>
+     <h1 class="h196">₹120/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+</div>
+
+<div class="product1">
+    <h1 class="h190">6.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">The pvc fall celling</h2>
+     <h1 class="h196">₹100/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+</div>
+
+    
+    <div class="product1">
+    <h1 class="h190">7.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">pop false celling</h2>
+     <h1 class="h196">₹150/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+</div>
+
+   
+<div class="product1">
+    <h1 class="h190">8.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">Godrej modular kithens</h2>
+     <h1 class="h196">₹1200/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+</div>
+
+     
+    <div class="product1">
+    <h1 class="h190">9.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">Armstrong fiber fall celling</h2>
+     <h1 class="h196">₹100/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+</div>
+
+    
+   <div class="product1">
+    <h1 class="h190">10.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">Wooden Almirah</h2>
+     <h1 class="h196">₹1000/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+ 
+
     </div>
+    <div class="product1">
+    <h1 class="h190">11.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">Hettich kitchen cabinets</h2>
+     <h1 class="h196">₹1400/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+ 
+
+    </div>
+    <div class="product1">
+    <h1 class="h190">12.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">celling grid tiles</h2>
+     <h1 class="h196">₹70/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+</div>
+
+     
+    <div class="product1">
+    <h1 class="h190">13.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">kitchen wardrobe </h2>
+     <h1 class="h196">₹1000/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+</div>
+
+<div class="product1">
+    <h1 class="h190">13.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">kitchen wardrobe </h2>
+     <h1 class="h196">₹1000/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+</div>
+
+<div class="product1">
+    <h1 class="h190">14.</h1>
+     <img src="./libraries/Gypsum-false-ceiling.jpg" class="img-1" width="200px" height="90px">
+     <h2 class="h191">kitchen wardrobe </h2>
+     <h1 class="h196">₹1000/sq-ft</h1>
+     <Image src="./libraries/add to cart.png"  width="200rem" height="50rem" class="image902" id="cart" onclick="window.location.href='Form.html'">
+</div>
 
 
+
+    </div>
     </body>
     </html>

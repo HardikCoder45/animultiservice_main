@@ -3,6 +3,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bk.css">
         <link rel="icon" type="./libraries/ams2.ico" href="./libraries/AMS.JPG">
+        <meta charset="UTF-8">
+        <meta name="viewport" content=" width=device- width, initial-scale=1.0">
 
         <script src="./Libraires/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./Libraires/sweetalert.css" />
@@ -11,96 +13,25 @@
 <title>Form</title>
     </head>
     <body>
-        
-        <form id="Form">
-   <div class="form1">
-        <div class="body">
- 
-            
-        <div class="heading1">
-        <p>Form</p>
-</div>
-        <div class="form ">
-            <div class="form1">
-            <div class="name">
-                Name
-                </div>
-                 <div class="name1">
-        <Input 
-        Id="name"
-        value=" " 
-        width="200px"
-         class="f"
-        />
-         </div>
-
-         <div class="name">
-            Email
-        </div>
-        <div class="Email">
-        <input id="Email" value="" type="email" class="f"/>
+   
+        <form onsubmit="update()" action="sender.html">
+            <p class="form_heading">Contact Us :-</p>
+       <div class="form_base">
+        <div class="form0">
+        <input type="text" autocomplete="off" required id="name" name="username" placeholder="Username" class="form_name">
+        <input type="email" name="eamil" autocomplete="off" required id="Email" placeholder="demo@gmail.com" class="form_email">
+    </div>  
+        <div class="form1">
+        <input type="tel" name="" id="no" autocomplete="off" required placeholder="Phone No." class="form_tel" maxlength="10">
+        <input type="text" class="form_work" id="work" placeholder="work" name="subject" autocomplete="off" required>
         </div>
         
-
-            <div class="name">
-                  Phone No.
-            </div>
-            <div class="phone_No">
-            <input id="no" value="" maxlength="10" type="tel" minlength="10" class="f">
-            </div>
-        </div>
-        <div class="form2"> 
-          
-                
-
- 
- 
- 
-
-          <div class="name">
-            Work
-          </div>
-          <div class="aork">
-          <input list="Works" name="Work" id="Work" width="200px" class="f">
-           </div>
-
-
-          <datalist id="Works">
-            <option value="Wardrobe"></option>
-            <option value="Wooden Modualr kitchen"></option>
-            <option value="Pop Flase Ceiling"></option>
-            <option value="Gypsum false ceiling"></option>
-            <option value="House Interior 2BHk"> </option>
-            <option value="House Interior 3BHk"> </option>
-            <option value="House Interior 4BHk"> </option>
-            <option value="Office Interior"> </option>
-            <option value="Washroom Renovation"></option> 
-          </datalist>
-
-        
-        <div class="form3">
-<div class="name">
-    Quantity
+        <textarea type="text" name="textarea"  autocomplete="off" required placeholder="Description" id="des" class="form_des" rows="7" colu></textarea>
     </div>
-         <div class="qun">
-        <input type="number" list="quantity" value="0" width="100px" Id="qun"  class="f">
-        </div>
-</div>
-    </div>
-        
-    </div>
-
- 
+    <center><button class="form_button" name="" onclick="update()">Send Inquery</button></center>
      
-     
-     <span onclick="update()" class="button"><p class="d">SUBMIT</p></span>
- 
-     
-        </div>
+        </form>
 
-    </div>
-
-</form>
         <script>
              
     
@@ -113,33 +44,57 @@ function update(){
 
     const form = document.getElementById("form")
 
-    
-
     const val1 = document.getElementById("name").value;
     const val2 = document.getElementById("Email").value;
     const val3 = document.getElementById("no").value;
-    const val4 = document.getElementById("Work").value;
-    const val5 = document.getElementById("qun").value;
+    const val4 = document.getElementById("des").value;
+    const val5 = document.getElementById("work").value;
+ 
    
+    var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+
+ var a1 = val3.length<10 || isNaN(val3) || val3.charAt(0)!=9 && val3.charAt(0)!=7 && val3.charAt(0)!=8 ? 'false' : 'true'
+ var a2 = regx.test(val2) ? 'true' : 'flase'
+ var a3 = val1 == "" || val2 == "" || val3 == "" || val4 == "" || val5 == "" ? 'false' : 'true'
+ 
+
+/*if(val3.length<10 || isNaN(val3) || val3.charAt(0)!=9 && val3.charAt(0)!=7 && val3.charAt(0)!=8 ){
+ alert("please enter valid mobile no")
+ 
+}
+ swal("Something Went Wrong!","Please Enter a valid Email ID ","warning")
+ swal("Something Went Wrong!","Please Enter All Details","warning")
+ swal("Something Went Wrong!","please Enter a valid mobile Number","warning",{customClass: 'swal-wide'})
+
+if(regx.test(val2)){
    
+    return true;
+}
+else{
 
-    if(val1 == "" || val2 == "" || val3 == "" || val4 == "" || val5 == "0"){
-     alert("Please Enter All Details")
-
-    }
-    else{
-
+}
+ 
+if(val1 == "" || val2 == "" || val3 == "" || val4 == "" || val5 == "0"){
+ alert("Please Enter All Details")
+}  
+ */
+if(a1 == 'true' && a2 == 'true' && a3 == 'true'){
+   
     localStorage.setItem('val1', val1)
     localStorage.setItem('val2', val2)
     localStorage.setItem('val3', val3)
     localStorage.setItem('val4', val4)
-    localStorage.setItem('val5',val5)
+    localStorage.setItem('val5', val5)
      
     
-    window.location.href = "sumbit.html"
-    }
    
-}
+    }
+ 
+ 
+  
+    }
+     
+        
 
       
         </script>
